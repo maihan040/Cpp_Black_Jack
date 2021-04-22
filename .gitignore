@@ -1,2 +1,5 @@
+# ignore object and archive files
 *.[oa]
-.vscode/
+
+# ignore the vscode folder and all its contents
+vscode/
