@@ -7,8 +7,8 @@
 /******************************************************************************************/
 #include <iomanip>
 #include <iostream>
-#include "BlackJackParticipant.h"
-#include "Card.h"
+#include "HeaderFiles/BlackJackParticipant.h"
+#include "HeaderFiles/Card.h"
 using namespace std;
 
 /******************************************************************************************/

@@ -25,12 +25,12 @@
 #include <iostream>
 #include <exception>
 
-#include "Shoe.h"
-#include "Dealer.h"
-#include "Player.h"
-#include "DiscardTray.h"
-#include "BlackJackGame.h"
-#include "MiscFunctions.h"
+#include "HeaderFiles/Shoe.h"
+#include "HeaderFiles/Dealer.h"
+#include "HeaderFiles/Player.h"
+#include "HeaderFiles/DiscardTray.h"
+#include "HeaderFiles/BlackJackGame.h"
+#include "HeaderFiles/MiscFunctions.h"
 
 using namespace std; 
 
@@ -384,7 +384,9 @@ void open_file(ifstream& iFile, const string& FileName) {
 	// Try to open the file, if it doesn't exist then throw a
 	// runtime exception
 	// 
-	iFile.open(FileName);
+
+	string FilePath = "TextFiles/" + FileName;
+	iFile.open(FilePath);
 
 	/* Check whether the file was successfully opened */
 	if(!iFile)
