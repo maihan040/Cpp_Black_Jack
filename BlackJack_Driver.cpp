@@ -369,17 +369,6 @@ void play_game(BlackJackGame* BJG, Dealer* dealer, Player& player, DiscardTray* 
 //
 void open_file(ifstream& iFile, const string& FileName) {
 
-	//// 
-	//// Try to open the file
-	////
-	//try {
-	//	iFile.open(FileName);
-	//}
-	//catch (std::exception& e) {
-	//	std::cerr << "Exception opening/reading file\n";
-	//	exit(1);
-  	//}
-
 	//
 	// Try to open the file, if it doesn't exist then throw a
 	// runtime exception
